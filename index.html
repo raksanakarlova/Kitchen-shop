@@ -19,9 +19,6 @@
 		<nav class="navigation">
 			<ol class="nav-menu">
 				<li class="nav-item">
-					<a href="#">Product</a>
-				</li>
-				<li class="nav-item">
 					<a href="#">Delivery</a>
 				</li>
 				<li class="nav-item">
@@ -29,6 +26,9 @@
 				</li>
 				<li class="nav-item">
 					<a href="#">Contacts</a>
+				</li>
+				<li class="nav-item cart">
+					<a href="#">Cart<span class="counter">(1)</span></a>
 				</li>
 			</ol>
 		</nav>
@@ -48,7 +48,7 @@
 		</div>
 
 		<div class="product-content">
-			<img src="/img/1.png" alt="product">
+			<img src="/img/1.svg" alt="product">
 
 			<div class="product-info">
 				<p class="product-desc">
@@ -78,13 +78,13 @@
 						</div>
 					</div>
 
-					<button class="btn">Buy</button>
+					<button class="btn">Add to cart</button>
 				</div>
 			</div>
 		</div>
 
 		<div class="product-content">
-			<img src="/img/2.png" alt="product">
+			<img src="/img/2.svg" alt="product">
 
 			<div class="product-info">
 				<p class="product-desc">
@@ -114,13 +114,13 @@
 						</div>
 					</div>
 
-					<button class="btn">Buy</button>
+					<button class="btn">Add to cart</button>
 				</div>
 			</div>
 		</div>
 
 		<div class="product-content">
-			<img src="/img/3.png" alt="product">
+			<img src="/img/3.svg" alt="product">
 
 			<div class="product-info">
 				<p class="product-desc">
@@ -152,10 +152,63 @@
 						</div>
 					</div>
 
-					<button class="btn">Buy</button>
+					<button class="btn">Add to cart</button>
 				</div>
 			</div>
 		</div>
+		<!--Модальное окно-->
+		<article class="modal mod-hid">
+			<div class="modal-content">
+				<p class="title-nav">Cart</p>
+
+				<div class="modal-decorate-line"></div>
+
+				<div class="modal-main">
+					<img class="product-s" src="/img/1.svg" alt="product">
+
+					<div class="modal-description">
+						<p class="title-main">Kochen</p>
+						<p class="desc-main">Модуль хранения</p>
+
+						<div class="opt-container">
+							<div class="clr">
+								<p>Color:</p>
+								<div class="clr-s"></div>
+							</div>
+
+							<div class="sz">
+								<p>Size:</p>
+								<div class="sz-s">
+									<p class="sz-text">62 x 55</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="price-container">
+						<p>1.399 €</p>
+						<button class="btn-del">
+							<img src="/img/icon.svg" alt="delete">
+						</button>
+					</div>
+				</div>
+
+				<div class="modal-decorate-line"></div>
+
+				<div class="dlvr-container">
+					<p class="title-foo">Delivery:</p>
+					<p class="price-foo">0.00 €</p>
+				</div>
+
+				<div class="total-container">
+					<p class="title-foo">Total:</p>
+					<p class="price-foo">1.399 €</p>
+				</div>
+
+				<button class="btn-go">Go to Checkout</button>
+				<button class="btn-continue">Continue shopping</button>
+			</div>
+		</article>
 	</main>
 
 	<script src="/script/script.js"></script>
