@@ -1,13 +1,14 @@
-// Реализую работу табов
-// 1. Скрыть ненужные табы
-// 2. Показать нужный таб
-// 3. Назначить обработчик события
-
 document.addEventListener('DOMContentLoaded', () => {
+	// Tabs
+	
 	const tabs = document.querySelectorAll('.title');
 	const decorLine = document.querySelectorAll('.decorative-line');
 	const tabsContent = document.querySelectorAll('.product-content');
 	const parentTabs = document.querySelector('.product-title');
+
+	const cartHoverItem = document.querySelector('.cart');
+	const modal = document.querySelector('.modal');
+	const btnClosed = modal.querySelector('.btn-continue');
 
 	function hideTabContent () {
 		tabs.forEach((item) => {
@@ -51,5 +52,34 @@ document.addEventListener('DOMContentLoaded', () => {
 			});
 		};
 	});
+
+	// Modal
+
+	function showContent () {
+		cartHoverItem.addEventListener('mouseenter', (event) => {
+			event.preventDefault();
+
+			modal.classList.remove('mod-hid');
+		});
+	};
+
+	function hideContent () {
+		modal.addEventListener('mouseleave', (event) => {
+			event.preventDefault();
+
+			modal.classList.add('mod-hid');
+		});
+	}
+
+	function closedBtn () {
+		btnClosed.addEventListener('click', (event) => {
+			event.preventDefault();
+			modal.classList.add('mod-hid');
+		});
+	}
+
+	showContent();
+	hideContent();
+	closedBtn();
 });
 
