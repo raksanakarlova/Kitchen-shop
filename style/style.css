@@ -5,6 +5,10 @@ body{
 	background-color: #656565;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 .header {
 	width: 920px;
 	height: 46px;
@@ -250,7 +254,6 @@ body{
 }
 
 .modal {
-	display: block;
 	position: relative;
 	bottom: 645px;
 	left: 570px;
@@ -271,7 +274,7 @@ body{
 .title-nav {
 	width: 310px;
 	height: 19px;
-	padding: 20px 0px 0px;
+	padding: 20px 0px 20px;
 	color: #494949;
 	font-family: 'Inter', sans-serif;
 	font-size: 16px;
