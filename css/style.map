@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../sass/style.sass"
+	],
+	"sourcesContent": [
+		"@mixin buttons {\n\twidth: 288px;\n\theight: 64px;\n\tfont-weight: 500;\n\tfont-size: 20px;\n\tline-height: 110%;\n\tletter-spacing: -0.01em;\n\tborder-radius: 4px; }\n\n$font-family: 'IBM Plex Sans', sans-serif;\n$textWhite: #FFFFFF;\n$textSecondary: #6F7177;\n$textPrimary: #121212;\n$textTetriary: #BCC2C5;\n$flex: flex;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+	],
+	"names": [],
+	"mappings": ""
+}

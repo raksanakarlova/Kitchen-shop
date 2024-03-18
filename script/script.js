@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	const cartHoverItem = document.querySelector('.cart');
 	const modal = document.querySelector('.modal');
-	const btnClosed = document.querySelector('.btn-continue');
+	const btnClosed = document.querySelector('.btn-continue-modal');
 
 	function hideTabContent () {
 		tabs.forEach((item) => {
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		cartHoverItem.addEventListener('mouseenter', (event) => {
 			event.preventDefault();
 
-			modal.classList.remove('mod-hid');
+			modal.classList.remove('mod-hidden');
 		});
 	};
 
@@ -67,14 +67,14 @@ document.addEventListener('DOMContentLoaded', () => {
 		modal.addEventListener('mouseleave', (event) => {
 			event.preventDefault();
 
-			modal.classList.add('mod-hid');
+			modal.classList.add('mod-hidden');
 		});
 	}
 
 	btnClosed.addEventListener('click', (event) => {
 		event.preventDefault();
 
-		modal.classList.add('mod-hid');
+		modal.classList.add('mod-hidden');
 	});
 
 	showContent();

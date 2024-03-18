@@ -1,217 +1,264 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-	<link rel="stylesheet" href="/style/style.css">
-	<title>Tabs</title>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/style.css">
+	<title>Furnature</title>
 </head>
 <body>
 	<header class="header">
-		<img src="/img/logo.svg" alt="logo">
-
 		<nav class="navigation">
-			<ol class="nav-menu">
+			<img src="img/screen/Furnature-logo.svg" alt="main__logo">
+
+			<ul class="nav-menu">
 				<li class="nav-item">
-					<a href="#">Delivery</a>
+					<a href="#">
+						Hello
+					</a>
 				</li>
 				<li class="nav-item">
-					<a href="#">News</a>
+					<a href="#">
+						Catalog
+					</a>
 				</li>
 				<li class="nav-item">
-					<a href="#">Contacts</a>
+					<a href="#">
+						Contacts
+					</a>
 				</li>
-				<li class="nav-item cart">
-					<a href="#">Cart</a>
+				<li class="nav-item">
+					<a href="#">
+						Cart <span class="counter">(Empty)</span>
+					</a>
 				</li>
-			</ol>
+			</ul>
 		</nav>
 	</header>
 
-	<main class="content-main">
-		<div class="product-title">
-			<p class="title">Kochen</p>
-			<p class="title">Kuhlen</p>
-			<p class="title">Verstauen</p>
-		</div>
-
-		<div class="lines">
-			<div class="decorative-line"></div>
-			<div class="decorative-line"></div>
-			<div class="decorative-line line-long"></div>
-		</div>
-
-		<div class="product-content">
-			<img src="/img/1.svg" alt="product">
-
-			<div class="product-info">
-				<p class="product-desc">
-					Модуль хранения предлагает достаточно места для приготовления, сервировки и хранения.
+	<main class="main">
+		<section class="main">
+			<div class="main">
+				<h1 class="main-title">
+					Fur<span>nature</span>
+				</h1>
+				<p class="main">
+					Переосмысление вашего жилого пространства
 				</p>
 
-				<div class="container">
-					<p class="price">1.399 EUR</p>
-
-					<div class="size">
-						<p class="subtitle">Size:</p>
-						<div class="size-block">
-							<p>62 X 55 cm</p>
-						</div>
-					</div>
-					
-					<div class="colors">
-						<p class="subtitle">Color:</p>
-						<div class="colors-block">
-							<div class="grey"></div>
-							<div class="olive"></div>
-						</div>
-
-						<div class="colors-subtitle">
-							<p class="color-choose">Grey</p>
-							<p class="color-choose">Olive</p>
-						</div>
-					</div>
-
-					<button class="btn">Add to cart</button>
-				</div>
+				<button class="btn-catalog">Перейти в каталог</button>
+				<button class="btn-consulting">Заказать консультацию</button>
 			</div>
-		</div>
+		</section>
 
-		<div class="product-content">
-			<img src="/img/2.svg" alt="product">
+		<section class="advertising-content">
+			<div class="adv-container">
+				<div class="text-content">
+					<h1 class="adv-title">
+						<span>Инновационные</span> решения для вашего комфорта — 
+						на все времена
+					</h1>
+					<p class="adv-desc">
+						Мы переосмысливаем что значит сидеть, отходя от устоявшихся структур. 
+						Наши стулья сочетают в себе модульность, технологии, 
+						дизайн и качество, что обеспечивает удовольствие и веселье именно 
+						там где вы хотите
+					</p>
+				</div>
 
-			<div class="product-info">
-				<p class="product-desc">
-					Холодильный модуль с достаточным пространством для хранения гарантирует, что ваши напитки всегда будут идеально охлажденными.
+				<img src="img/screen/second-screen-img.svg" alt="chair__img">
+			</div>
+		</section>
+
+		<section class="about-content">
+			<h2>Почему мы</h2>
+
+			<div class="conv_func">
+				<img src="img/iconAdv/icon1.svg" alt="icon">
+				<h3>Удобство и функциональность</h3>
+				<p>
+					Наши современные стулья обеспечивают 
+					удобство и комфорт, оптимизируют 
+					пространство и помогают организовать 
+					содержимое дома
+				</p>
+			</div>
+			<div class="delivery">
+				<img src="img/iconAdv/icon2.svg" alt="icon">
+				<h3>Условия доставки и сервис</h3>
+				<p>
+					Вы получаете превосходный сервис, гибкую 
+					доставку и правильную осанку
+				</p>
+			</div>
+			<div class="design">
+				<img src="img/iconAdv/icon3.svg" alt="icon">
+				<h3>Эстетика и дизайн</h3>
+				<p>
+					Дизайн стульев сочетает в себе стиль и
+					практичность. Модные линии, выбор
+					материалов соответствуют последним 
+					тендециям, придавая стульям шик и 
+					изысканность
+				</p>
+			</div>
+		</section>
+
+		<section class="catalog-header">
+			<h3>Каталог</h3>
+
+			<div class="catalog-titles">
+				<h2>Kochen</h2>
+				<h2>Ultimate</h2>
+				<h2>Kuchlen</h2>
+				<h2>Spulen</h2>
+			</div>
+
+			<div class="catalog-line"></div>
+		</section>
+
+		<section class="kochen-content">
+			<div class="catalog-desc">
+				<p class="catalog-desc">
+					Удобный стул с элегантным дизайном, идеальный для отдыха и работы
+				</p>
+				<p class="catalog-price">
+					1399 ₽
 				</p>
 
-				<div class="container">
-					<p class="price">2.499 EUR</p>
-
-					<div class="size">
-						<p class="subtitle">Size:</p>
-						<div class="size-block">
-							<p>55 X 62 cm</p>
-						</div>
-					</div>
-
-					<div class="colors">
-						<p class="subtitle">Color:</p>
-						<div class="colors-block">
-							<div class="grey"></div>
-							<div class="olive"></div>
-						</div>
-
-						<div class="colors-subtitle">
-							<p class="color-choose">Grey</p>
-							<p class="color-choose">Olive</p>
-						</div>
-					</div>
-
-					<button class="btn">Add to cart</button>
+				<div class="colors">
+					Цвет: <span class="catalog-color-text">Синий</span>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
 				</div>
+
+				<button class="btn-catalog">Добавить в корзину</button>
 			</div>
-		</div>
+			
+			<img src="img/firstCard/main.svg" alt="blue">
 
-		<div class="product-content">
-			<img src="/img/3.svg" alt="product">
+			<!-- <img src="img/firstCard/pink.svg" alt="">
+			<img src="img/firstCard/purple.svg" alt="">
+			<img src="img/firstCard/sea.svg" alt=""> -->
+		</section>
 
-			<div class="product-info">
-				<p class="product-desc">
-					Высококачественная плита для гриля использует силу обоих индукционных полей для достижения оптимальных результатов приготовления на гриле.
+		<section class="ultimate-content">
+			<div class="catalog-desc">
+				<p class="catalog-desc">
+					Эргономичный стул с современным стилем, обеспечивает комфорт и поддержку при сидении
+				</p>
+				<p class="catalog-price">
+					2.399 RUB
 				</p>
 
-				<div class="container">
-					<p class="price">99 EUR</p>
-
-					<div class="size">
-						<p class="subtitle">Size:</p>
-
-						<div class="size-block">
-							<p>33 X 57 cm</p>
-						</div>
-					</div>
-
-					<div class="colors">
-						<p class="subtitle">Color:</p>
-
-						<div class="colors-block">
-							<div class="grey"></div>
-							<div class="olive"></div>
-						</div>
-
-						<div class="colors-subtitle">
-							<p class="color-choose">Grey</p>
-							<p class="color-choose">Olive</p>
-						</div>
-					</div>
-
-					<button class="btn">Add to cart</button>
+				<div class="colors">
+					Цвет: <span class="ultimate-color-text">Зеленый</span>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
 				</div>
+
+				<button class="btn-catalog">Добавить в корзину</button>
 			</div>
-		</div>
-		<!--Модальное окно-->
-		<article class="modal mod-hid">
-			<div class="modal-content">
-				<p class="title-nav">Cart</p>
+			
+			<img src="img/secondCard/main.svg" alt="green">
 
-				<div class="modal-decorate-line"></div>
+			<!-- <img src="img/firstCard/pink.svg" alt="">
+			<img src="img/firstCard/purple.svg" alt="">
+			<img src="img/firstCard/sea.svg" alt=""> -->
+		</section>
 
-				<div class="modal-main">
-					<img class="product-s" src="/img/1.svg" alt="product">
+		<section class="kuchlen-content">
+			<div class="catalog-desc">
+				<p class="catalog-desc">
+					Стильный табурет для комфортного сидения в любом интерьере
+				</p>
+				<p class="catalog-price">
+					1.199 RUB
+				</p>
 
-					<div class="modal-description">
-						<p class="title-main">Kochen</p>
-						<p class="desc-main">Модуль хранения</p>
-
-						<div class="opt-container">
-							<div class="clr">
-								<p>Color:</p>
-								<div class="clr-s"></div>
-							</div>
-
-							<div class="sz">
-								<p>Size:</p>
-								<div class="sz-s">
-									<p class="sz-text">62 x 55</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="price-container">
-						<p>1.399 €</p>
-						<button class="btn-del">
-							<img src="/img/icon.svg" alt="delete">
-						</button>
-					</div>
+				<div class="colors">
+					Цвет: <span class="ultimate-color-text">Красный</span>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
 				</div>
 
-				<div class="modal-decorate-line"></div>
-
-				<div class="dlvr-container">
-					<p class="title-foo">Delivery:</p>
-					<p class="price-foo">0.00 €</p>
-				</div>
-
-				<div class="total-container">
-					<p class="title-foo">Total:</p>
-					<p class="price-foo">1.399 €</p>
-				</div>
-
-				<button class="btn-go">Go to Checkout</button>
-				<button class="btn-continue">Continue shopping</button>
+				<button class="btn-catalog">Добавить в корзину</button>
 			</div>
-		</article>
+			
+			<img src="img/thirdCard/main.svg" alt="red">
+
+		</section>
+
+		<section class="spulen-content">
+			<div class="catalog-desc">
+				<p class="catalog-desc">
+					Этот стул — ваш верный спутник  в мире сидения
+				</p>
+				<p class="catalog-price">
+					3.199 RUB
+				</p>
+
+				<div class="colors">
+					Цвет: <span class="spulen-color-text">Чёрный</span>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+
+				<button class="btn-catalog">Добавить в корзину</button>
+			</div>
+			
+			<img src="img/fourthCard/main.svg" alt="black">
+		</section>
+
+		<section class="contacts">
+			<div class="contacts-info">
+				<h1 class="contact-title">Подпишитесь на обновления и <span>получайте скидки</span></h1>
+				<p>Скиньте жепу и получите 10% скидку на подушки для стульев “Крысиный мув”</p>
+			</div>
+			<input type="text">
+			<button>Подписаться</button>
+		</section>
 	</main>
 
-	<script src="/script/script.js"></script>
+	<footer class="footer">
+		<img src="img/screen/Furnature-logo.svg" alt="logo">
+
+		<div class="contact-container">
+			<div class="adress">
+				<p>Адрес магазина</p>
+				<p>г. Тбилиси, ул. Пушкина д.12</p>
+			</div>
+
+			<div class="phone">
+				<p>Телефон</p>
+				<p>+995 (599) 07 13 85</p>
+			</div>
+
+			<div class="social-icons">
+				<div>
+					<img src="img/iconSocial/Instagram.svg" alt="instagram">
+				</div>
+				<div>
+					<img src="img/iconSocial/facebook.svg" alt="facebook">
+				</div>
+				<div>
+					<img src="img/iconSocial/whatsapp.svg" alt="whatsaap">
+				</div>
+			</div>
+		</div>
+
+	</footer>
 </body>
 </html>
